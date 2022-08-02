@@ -99,21 +99,22 @@ function isprime(listNumber) {
   //   }
   // }
   // return -1;
-  let result = [];
-  for (let i = 0; i < listNumber.length; i++) {
+  var result = [];
+  for (var i = 0; i < listNumber.length; i++) {
     if (soN(listNumber[i]) == 1) {
       result.push(listNumber[i]);
+      break;
     }
   }
   return result;
 }
 
 function soN(n) {
-  let flag = 1;
+  var flag = 1;
 
   if (n < 2) return (flag = 0);
 
-  let i = 2;
+  var i = 2;
   while (i < n) {
     if (n % i == 0) {
       flag = 0;
