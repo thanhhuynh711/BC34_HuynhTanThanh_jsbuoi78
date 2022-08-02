@@ -84,6 +84,46 @@ function sortTheoSo(listNumber) {
 }
 
 //Bài 8: Tìm số nguyên tố đầu tiên trong mảng
+function isprime(listNumber) {
+  // var a = [];
+  // for (var i = 0; i < listNumber.length; i++) {
+  //   if (listNumber[i] > 1) {
+  //     a.push(listNumber[i]);
+  //   }
+  // }
+  // for (var j = 0; j < a.length; j++) {
+  //   if (a[j] === 2) {
+  //     return a[j];
+  //   } else if (a[j] % 2 !== 0 && a[j] % Math.sqrt(a[j]) !== 0) {
+  //     return a[j];
+  //   }
+  // }
+  // return -1;
+  let result = [];
+  for (let i = 0; i < listNumber.length; i++) {
+    if (soN(listNumber[i]) == 1) {
+      result.push(listNumber[i]);
+    }
+  }
+  return result;
+}
+
+function soN(n) {
+  let flag = 1;
+
+  if (n < 2) return (flag = 0);
+
+  let i = 2;
+  while (i < n) {
+    if (n % i == 0) {
+      flag = 0;
+      break;
+    }
+    i++;
+  }
+
+  return flag;
+}
 
 //Bài 9: Đếm số nguyên
 function demSoNguyen(listNumber) {

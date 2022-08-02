@@ -70,8 +70,8 @@ document.getElementById("sapXep").onclick = function () {
 
 document.getElementById("soNguyenTo").onclick = function () {
   var output = 0;
-  output = soNguyen(listNumber);
-  document.getElementById("thongBao2").innerHTML = ": " + output;
+  output = isprime(listNumber);
+  document.getElementById("thongBao2").innerHTML = output;
 };
 
 //Bai 9: Đếm số nguyên
