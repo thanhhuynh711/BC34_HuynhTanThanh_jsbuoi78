@@ -99,6 +99,7 @@ function isprime(listNumber) {
   //   }
   // }
   // return -1;
+
   var result = [];
   for (var i = 0; i < listNumber.length; i++) {
     if (soN(listNumber[i]) == 1) {

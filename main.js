@@ -71,14 +71,15 @@ document.getElementById("sapXep").onclick = function () {
 document.getElementById("soNguyenTo").onclick = function () {
   var output = 0;
   output = isprime(listNumber);
-  document.getElementById("thongBao2").innerHTML = output;
+  document.getElementById("thongBao2").innerHTML =
+    "Số nguyên tố dầu tiên: " + output;
 };
 
 //Bai 9: Đếm số nguyên
 document.getElementById("demSoNguyen").onclick = function () {
   var output = 0;
   output = demSoNguyen(listNumber);
-  document.getElementById("thongBao2").innerHTML = output;
+  document.getElementById("thongBao2").innerHTML = "Số nguyên: " + output;
 };
 
 //Bai 10: So sánh số âm và số dương
